@@ -10,9 +10,8 @@
 Pytorch implementation of the paper "[ShadowLane:Physically-Based Shadow Synthesis and Natural-to-Adversarial Attacks for Robust Lane Detection]".
 
 ## Introduction
-![Arch](.github/arch.png)
-- CLRNet exploits more contextual information to detect lanes while leveraging local detailed lane features to improve localization accuracy. 
-- CLRNet achieves SOTA result on CULane, Tusimple, and LLAMAS datasets.
+- This paper explores a new question: whether shadows cast by environmental factors in the real physical world affect lane detectors. From the perspective of adversarial attacks, we propose and define a new task: adversarial lane shadow attacks. 
+- This work not only reveals the potential threat posed by natural shadows to lane detection systems, but also provides new insights and methods for evaluating the robustness of lane detectors in real-world environments.
 
 ## Installation
 
