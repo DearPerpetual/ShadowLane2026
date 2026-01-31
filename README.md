@@ -49,7 +49,7 @@ python main.py [configs/path_to_your_config] --attack --load_from [path_to_your_
 ```
 For example, run
 ```Shell
-python main.py configs/clrnet/clr_resnet18_tusimple.py --attack --load_from work_dirs/clr/r18_tusimple-Original/20241215_114052_lr_1e-03_b_40/ckpt/69.pth --gpus 0
+python main.py configs/clrnet/clr_resnet18_tusimple.py --attack --load_from work_dirs/clr/XXX/XXXX/ckpt/XX.pth --gpus 0
 ```
 
 We will get the attack result in `/attack_img`.
