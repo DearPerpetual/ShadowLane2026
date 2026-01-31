@@ -56,59 +56,12 @@ We will get the attack result in `/attack_img`.
 
 
 ## Results
-![F1 vs. Latency for SOTA methods on the lane detection](.github/latency_f1score.png)
-
-[assets]: https://github.com/turoad/CLRNet/releases
-
-### CULane
-
-|   Backbone  |  mF1 | F1@50  | F1@75 |
-| :---  |  :---:   |   :---:    | :---:|
-| [ResNet-18][assets]     | 55.23  |  79.58   | 62.21 |
-| [ResNet-34][assets]     | 55.14  |  79.73   | 62.11 |
-| [ResNet-101][assets]     | 55.55| 80.13   | 62.96 |
-| [DLA-34][assets]     | 55.64|  80.47   | 62.78 |
-
-
 
 ### TuSimple
-|   Backbone   |      F1   | Acc |      FDR     |      FNR   |
-|    :---       |          ---:          |       ---:       |       ---:       |      ---:       |
-| [ResNet-18][assets]     |    97.89    |   96.84  |    2.28  |  1.92      | 
-| [ResNet-34][assets]       |   97.82              |    96.87          |   2.27          |    2.08      | 
-| [ResNet-101][assets]      |   97.62|   96.83  |   2.37   |  2.38  |
+| TuSimple | Acc.(I) | F1(I) | Acc.(II) | F1(II) | Acc.(III) | F1(III) | MIR  |
+|:--------|--------:|------:|---------:|-------:|----------:|--------:|-----:|
+| Original | 96.84 | 97.89 | 95.16 | 88.44 | 88.69 | 48.91 | 60.36 |
+| Ours (Line Shadow attack) | 89.89 | 91.03 | 85.38 | 71.87 | 72.62 | 22.83 | 68.65 |
+| Ours (Tree Shadow attack) | 94.95 | 95.84 | 92.82 | 84.89 | 85.70 | 42.56 | 62.63 |
 
 
-
-### LLAMAS
-|   Backbone    |  <center>  valid <br><center> &nbsp; mF1 &nbsp; &nbsp;  &nbsp;F1@50 &nbsp; F1@75     | <center>  test <br> F1@50 |
-|  :---:  |    :---:    |        :---:|
-| [ResNet-18][assets] |  <center> 70.83  &nbsp; &nbsp; 96.93 &nbsp; &nbsp; 85.23 | 96.00 |
-| [DLA-34][assets]     |  <center> 71.57 &nbsp; &nbsp;  97.06  &nbsp; &nbsp; 85.43  |   96.12 |
-
-“F1@50” refers to the official metric, i.e., F1 score when IoU threshold is 0.5 between the gt and prediction. "F1@75" is the F1 score when IoU threshold is 0.75.
-
-## Citation
-
-If our paper and code are beneficial to your work, please consider citing:
-```
-@InProceedings{Zheng_2022_CVPR,
-    author    = {Zheng, Tu and Huang, Yifei and Liu, Yang and Tang, Wenjian and Yang, Zheng and Cai, Deng and He, Xiaofei},
-    title     = {CLRNet: Cross Layer Refinement Network for Lane Detection},
-    booktitle = {Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)},
-    month     = {June},
-    year      = {2022},
-    pages     = {898-907}
-}
-```
-
-## Acknowledgement
-<!--ts-->
-* [open-mmlab/mmdetection](https://github.com/open-mmlab/mmdetection)
-* [pytorch/vision](https://github.com/pytorch/vision)
-* [Turoad/lanedet](https://github.com/Turoad/lanedet)
-* [ZJULearning/resa](https://github.com/ZJULearning/resa)
-* [cfzd/Ultra-Fast-Lane-Detection](https://github.com/cfzd/Ultra-Fast-Lane-Detection)
-* [lucastabelini/LaneATT](https://github.com/lucastabelini/LaneATT)
-* [aliyun/conditional-lane-detection](https://github.com/aliyun/conditional-lane-detection)
-<!--te-->
