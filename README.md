@@ -1,22 +1,13 @@
-<div align="center">
-  
-[![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/clrnet-cross-layer-refinement-network-for/lane-detection-on-culane)](https://paperswithcode.com/sota/lane-detection-on-culane?p=clrnet-cross-layer-refinement-network-for)
-[![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/clrnet-cross-layer-refinement-network-for/lane-detection-on-llamas)](https://paperswithcode.com/sota/lane-detection-on-llamas?p=clrnet-cross-layer-refinement-network-for)
-[![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/clrnet-cross-layer-refinement-network-for/lane-detection-on-tusimple)](https://paperswithcode.com/sota/lane-detection-on-tusimple?p=clrnet-cross-layer-refinement-network-for)
-
-
-</div>
-
 
 <div align="center">
 
-# CLRNet: Cross Layer Refinement Network for Lane Detection
+# ShadowLane:Physically-Based Shadow Synthesis and Natural-to-Adversarial Attacks for Robust Lane Detection
 
 </div>
 
 
 
-Pytorch implementation of the paper "[CLRNet: Cross Layer Refinement Network for Lane Detection](https://arxiv.org/abs/2203.10350)" (CVPR2022 Acceptance).
+Pytorch implementation of the paper "[ShadowLane:Physically-Based Shadow Synthesis and Natural-to-Adversarial Attacks for Robust Lane Detection]".
 
 ## Introduction
 ![Arch](.github/arch.png)
